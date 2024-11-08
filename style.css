@@ -1,0 +1,236 @@
+
+@charset "UTF-8";
+/* Centro da Página Web */
+:root {
+    --cor0: #dadada;
+    --cor1: #0CB6DA;
+    --cor2: #0C74DC;
+    --cor3: #014c97;
+    --cor4: #2A0DDD;
+    --cor5: #416be7;
+    --cor6: #688ef7;
+    --cor7: #005d7c;
+    --cor8: #58bcff;
+    --cor9: #8193f7;
+    --cor10: #000000;
+    --cor11: #ff0000;
+    --cor12: #80e6ff;   
+    --cor13: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    background-image: radial-gradient(circle, var(--cor9), var(--cor1), var(--cor2), var(--cor5), var(--cor4));
+    background-repeat: no-repeat;
+    height: 2000px;
+    background-attachment: fixed;
+    margin: 2px;
+}
+.bodycad{
+    color: var(--cor11);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    background-color: var(--cor6);
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    text-shadow: 10px color(var(--cor5));
+}
+
+.ttp {
+    text-align: center;
+    background-color: var(--cor6);
+    color: aliceblue;
+}
+
+.txtinfo {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    box-shadow: 15px var(--cor2);
+}
+
+.pnt {
+    font-size: 2em;
+    text-align: center;
+}
+
+.linkpags {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Parte Inicial da Página Web */
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 93, 124);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+
+}
+
+header > span.txt {
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+header > span {
+    background-color: rgb(88, 188, 255);
+    border-radius: 10px 10px 5px 5px;
+    color: black;
+}
+
+nav {
+    background-color: rgb(106, 218, 255);
+    box-shadow: 5px 5px 15px rgb(129, 147, 247);
+    text-align: center;
+    padding: 6px;
+    margin: 6px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    margin: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    text-decoration: none;
+    background-color: #0C74DC;
+    color: #2A0DDD;
+}
+
+main {
+    background-image: radial-gradient(var(--cor0), var(--cor6));
+    box-shadow: 15px rgb(0, 0, 0);
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+    min-width: 580px;
+    max-width: 1300px;
+    padding-top: 1%;
+}
+
+article {
+    background-color: rgb(0, 174, 255);
+    color: aliceblue;
+    margin: 10px;
+    padding: 12px;
+}
+
+article > aside {
+    background-color: #80e6ff;
+    box-shadow: 5px 5px 15px 5px #7bc5f7;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.teste {
+    background-color: #9cbefd;
+    padding: 100px;
+}
+
+/* Final da Página Web */
+footer {
+    padding: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #80e6ff;
+    box-shadow: 5px 5px 15px #00000080;
+    background-color: #e4e4e4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main > section.Assuntos > span {
+    margin: 15px;
+    padding: 15px;
+    color: var(--cor13);
+    background-color: #00a2ff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Assuntos {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+main > section.Voltar > span {
+    margin: 15px;
+    padding: 15px;
+    color: var(--cor13);
+    background-color: #00a2ff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Voltar {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+span {
+    margin: 5px;
+    padding: 5px;
+    color: var(--cor0);
+    background-color: var(--cor6);
+    border-color: var(--cor10);
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+
+.txtCanais {
+    background-color: var(--cor11);
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--cor13);
+    text-decoration: none;
+}
+
+.ttpec {
+    background-image: radial-gradient(circle, var(--cor8), var(--cor2), var(--cor5), var(--cor5), var(--cor4));
+    color: var(--cor13);
+    border-radius: 5px;
+}
+marquee{
+    display: block;
+    background-color: #7bc5f7;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgb(119, 98, 238);
+    border-radius: 20px;
+}
