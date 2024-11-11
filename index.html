@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style-forum.css">
     <title>Home</title>
 <script>
-    let isPaused = false;
+    // Seleciona o elemento <marquee>
+    const marquee = document.getElementById("myMarquee");
     
-    function toggleMarquee() {
-        const marquee = document.getElementById("myMarquee");
-        if (isPaused) {
-            marquee.start();  // Retoma o marquee
-        } else {
-            marquee.stop();   // Pausa o marquee
-        }
-        isPaused = !isPaused; // Alterna o estado entre pausado e rodando
+    // Seleciona todos os elementos <iframe> dentro do <marquee>
+    const iframes = marquee.getElementsByTagName("iframe");
+
+    // Adiciona um evento de clique a cada <iframe>
+    for (let iframe of iframes) {
+        iframe.addEventListener("click", function() {
+            marquee.stop();  // Para o marquee ao clicar no vídeo
+        });
     }
 </script>
 </head>
