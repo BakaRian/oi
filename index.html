@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-forum.css">
     <title>Home</title>
+<script>
+    function toggleMarquee() {
+        const marquee = document.getElementById("myMarquee");
+        if (marquee.getAttribute("scrollamount") != 0) {
+            marquee.setAttribute("scrollamount", 0); // Pausa o marquee
+        } else {
+            marquee.setAttribute("scrollamount", 6); // Retoma o marquee (ajuste o valor conforme necessário)
+        }
+    }
+</script>
 </head>
 <br>
 <br>
